@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script type="text/javascript">
+        window.onbeforeunload = function () 
+        {
+        window.scrollTo(0, 0);
+        }
+    
+        $(document).ready( function () 
+        {
+            $('#down').on('click',function () 
+            {
+                $("html").scrollTop(0);  
+                console.log("Clicked!");
+               $('html, body').animate
+               ({
+                     scrollTop: $(".aboutMe").offset().top
+                }, 1000);
+            });
+        });
+//         function myFunction() {
+//         var x = document.getElementById("myTopnav");
+//         if (x.className === "topnav") {
+//             x.className += "responsive";
+//         } else {
+//             x.className = "topnav";
+//         }
+// }
+    </script>
+
+<head>
+         <title>Edgar Melendrez - Profile</title>
+        <link rel="stylesheet" type="text/css" href ="styles.css">
+       
+        <meta charset="UTF-8">
+        <meta name="viewport">
+        <meta name="description" content="The Online Portfolio for Edgarventura Melendrez, looking to hire someone with well rounded knowledge of computers, someone who works well under pressure and well with others? Then look no further."/>
+        <meta name="keywords" content="Edgarventura, Melendrez"/>
+        <meta name="author" content="Edgarventura Melendrez" />
+        <meta name="robots" content="follow"/>
+
+        <!-- Comment -->
+
+    </head>
+    
+<header>
+    <span id="down">&#8595;</span>
+</header>
+    <body> 
+        <h2 class="aboutMe">About Me</h2>
+        <br><br><br><br><br><br>
+        <br><br><br><br><br><br>
+        <br><br><br><br><br><br>
+        <br><br><br><br><br><br>
+        <br><br><br><br><br><br>
+        <br><br><br><br><br><br>
+        <br><br><br><br><br><br>
+        <br><br><br><br><br><br>
+	    <!-- <div class="main">
+            <h3 style="text-align: center;">Some Sample Content</h3>
+            <div class="slide-containter">
+                <spam id="slider-image-1"></spam>
+                <spam id="slider-image-2"></spam>
+                <spam id="slider-image-3"></spam>
+                <div class = "image-container">
+                   <img src="temp_img_1.jpg" class="slider-image" width="800px" height ="600px">
+                    <img src="temp_img_2.jpg" class="slider-image" width="800px" height ="600px">
+                    <img src="temp_img_3.jpeg" class="slider-image" width="800px" height ="600px"> -->
+                    <!--add images for slideshow above ^ .
+                </div>
+                <div class="button-container">
+                    <a href="#slider-image-1" class="slider-button"></a>
+                    <a href="#slider-image-2" class="slider-button"></a>
+                    <a href="#slider-image-3" class="slider-button"></a>
+                </div>
+            </div>
+        </div> -->
+    </body>
+
+    <footer>
+
+    </footer>
+</html>
